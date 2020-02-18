@@ -1,0 +1,71 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="layoutAdmin.master.cs" Inherits="projeto_pratica3.layoutAdmin" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+    <title>HomoPatus - Administração</title>
+
+    <link rel="icon" href="Content/icone.png" /> 
+
+    <link rel="stylesheet" href="Content/materialize/css/materialize.min.css" />
+
+    <link rel="stylesheet" href="Content/siteAdmin.css" />
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+
+</head>
+
+
+<body>
+    <main>
+
+        <form id="form1" runat="server">
+            <div>
+
+                <nav>
+                    <div class="nav-wrapper">
+                        <a href="indexAdmin.aspx" class="brand-logo" style="margin-left:1%">HomoPatus - Administração</a>
+                        <ul id="nav-mobile" class="right hide-on-med-and-down">
+                            <li><a href="index.aspx">Home(Usuário)</a></li>
+                            <li><a href="usuarios.aspx">Gerenciamento de usuários</a></li>
+                            <li><a href="informacoes.aspx">Gerenciamento de informações</a></li>
+                            <li><a href="relatorios.aspx">Relatórios</a></li>
+                            <li><a href="loginAdmin.aspx"><%=estado%></a></li>
+                        </ul>
+                    </div>
+                </nav>
+
+                <div class="container">
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    </asp:ContentPlaceHolder>
+                </div>
+            </div>
+        </form>
+
+    </main>
+
+
+        <footer class="page-footer">
+            <div class="container">
+                <div class="row">
+                    <h5 class="white-text">HomoPatus</h5>
+                </div>
+            </div>
+            <div class="footer-copyright">
+                <div class="container">
+                    © 2018 Copyright Luis Ribeiro Sabença Júnior
+                </div>
+            </div>
+        </footer>
+
+
+
+        <script type="text/javascript" src="Scripts/materialize/materialize.js"></script>
+        <script type="text/javascript" src="Scripts/jsAdmin.js"></script>
+        <script type="text/javascript" src="Scripts/jquery-2.1.1.min.js"></script>
+</body>
+</html>
